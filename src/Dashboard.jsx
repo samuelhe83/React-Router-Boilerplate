@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-// import Dropdown from './Dropdown';
-import DropdownButton from 'react-bootstrap/lib/DropdownButton';
-import MenuItem from 'react-bootstrap/lib/MenuItem';
-import LinkContainer from 'react-router-bootstrap/lib/LinkContainer';
+import { Link } from 'react-router-dom';
 class Dashboard extends Component {
   constructor(props) {
     super(props);
@@ -12,21 +9,18 @@ class Dashboard extends Component {
     return (
       <div>
         <header className="dashboard">
-          <DropdownButton title={'Test'} id={'1'} className="dropdown">
-            <LinkContainer to="/test">
-              <MenuItem>Test</MenuItem>
-            </LinkContainer>
-          </DropdownButton>
-          <DropdownButton title={'Test'} id={'1'} className="dropdown">
-            <LinkContainer to="/test">
-              <MenuItem>Test</MenuItem>
-            </LinkContainer>
-          </DropdownButton>
-          <DropdownButton title={'Test'} id={'1'} className="dropdown">
-            <LinkContainer to="/test">
-              <MenuItem>Test</MenuItem>
-            </LinkContainer>
-          </DropdownButton>
+          <Link to="/">
+            <img src="Logo-option1.png" alt="Cyanotrol" className="logo" />
+          </Link>
+          <Link to="/use" className="navButton">
+            How To Use
+          </Link>
+          <Link to="/technical" className="navButton">
+            Technical
+          </Link>
+          <Link to="/about" className="navButton">
+            About Us
+          </Link>
         </header>
       </div>
     );

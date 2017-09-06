@@ -29,6 +29,10 @@ module.exports = {
       {
         test: /\.jsx?$/,
         loader: 'babel-loader'
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
       }
     ]
   },
@@ -38,4 +42,3 @@ module.exports = {
     historyApiFallback: true
   }
 };
-
