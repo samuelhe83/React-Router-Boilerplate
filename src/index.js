@@ -5,6 +5,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 import Dashboard from './Dashboard';
 import Homepage from './Homepage';
+import About from './About';
 
 const FourOhFour = () => <h1>404. The requested URL was not found</h1>;
 
@@ -14,6 +15,7 @@ const App = (
       <Dashboard />
       <Switch>
         <Route exact path="/" component={Homepage} />
+        <Route path="/about" component={About} />
         <Route component={FourOhFour} />
       </Switch>
     </div>
