@@ -2,36 +2,41 @@ var path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
-  devtool: 'source-map',
-  entry: ['./src/index'],
+  entry: './src/index.js',
+
   output: {
-    path: path.join(__dirname, 'public'),
     filename: 'bundle.js',
-    publicPath: '/static/'
+    path: path.resolve(__dirname, 'public'),
+    publicPath: '/'
   },
+
+  devtool: 'source-map',
   resolve: {
     extensions: ['.js', '.jsx', '.json']
   },
+  module: {
+    rules: [
+      {
+        test: /\.jsx?$/,
+        use: ['babel-loader'],
+        exclude: /node_modules/
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
+      }
+    ]
+  },
+
   plugins: [
-    new webpack.optimize.OccurrenceOrderPlugin(),
+    new webpack.optimize.UglifyJsPlugin({
+      sourceMap: true,
+      comments: false
+    }),
     new webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: JSON.stringify('production')
       }
-    }),
-    new webpack.optimize.UglifyJsPlugin({
-      compressor: {
-        warnings: false
-      }
     })
-  ],
-  module: {
-    loaders: [
-      {
-        test: /\.js$/,
-        loaders: ['babel'],
-        include: path.join(__dirname, 'src')
-      }
-    ]
-  }
+  ]
 };

@@ -1,11 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
+
 const Dashboard = props => {
   return (
     <div>
       <header className="dashboard">
         <Link to="/">
-          <img src="Logo-option1.png" alt="Cyanotrol" className="logo" />
+          <img src="/assets/images/logo.png" alt="Cyanotrol" className="logo" />
         </Link>
         <Link to="/use" className="navButton">
           How To Use

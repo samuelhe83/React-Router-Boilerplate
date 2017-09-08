@@ -10,7 +10,7 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background: url('blue-banner.jpg') no-repeat;
+  background: url('images/blue-banner.jpg') no-repeat;
   background-size: cover;
 }
 
@@ -38,7 +38,7 @@ body {
 }
 
 .banner {
-  background: url('leaf-background.jpg') no-repeat center;
+  background: url('images/leaf-background.jpg') no-repeat center;
   height: 8vw;
   width: 100%;
   background-size: cover;
@@ -72,7 +72,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background: url('water background.jpg') no-repeat center;
+  background: url('images/water background.jpg') no-repeat center;
   background-size: cover;
 }
 
@@ -80,4 +80,10 @@ body {
   margin: 0 auto;
   height: 50vw;
   width: 50vw;
+}
+.technical {
+  margin-top: 1vw;
+}
+.use {
+  margin-left: 1vw;
 }
