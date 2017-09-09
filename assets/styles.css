@@ -16,6 +16,7 @@ body {
 
 .about {
   margin-left: 2vw;
+  font-family: 'Poppins', sans-serif;
 }
 
 #contact {
@@ -24,16 +25,15 @@ body {
 
 .navButton {
   background-color: transparent;
-  border: 0px;
   height: 100%;
   width: 13vw;
   margin-right: 5vw;
-  margin-top: 5vw;
   font-family: 'Cousine', sans-serif;
   font-weight: bold;
   font-size: 2vw;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
   color: white;
 }
 
@@ -61,9 +61,11 @@ body {
   font-family: 'Cousine', sans-serif;
   color: #0074d9;
 }
+.logo-container {
+  margin-right: 6vw;
+}
 .logo {
   height: 7vw;
-  margin-right: 6vw;
 }
 
 .homepage {
@@ -84,6 +86,8 @@ body {
 .technical {
   margin-top: 1vw;
 }
+
 .use {
   margin-left: 1vw;
+  font-family: 'Poppins', sans-serif;
 }

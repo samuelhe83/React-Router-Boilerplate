@@ -5,9 +5,11 @@ const Dashboard = props => {
   return (
     <div>
       <header className="dashboard">
-        <Link to="/">
-          <img src="/assets/images/logo.png" alt="Cyanotrol" className="logo" />
-        </Link>
+        <div className="logo-container">
+          <Link to="/">
+            <img src="/assets/images/logo.png" alt="Cyanotrol" className="logo" />
+          </Link>
+        </div>
         <Link to="/use" className="navButton">
           How To Use
         </Link>
