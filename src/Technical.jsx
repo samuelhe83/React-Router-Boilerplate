@@ -6,7 +6,7 @@ import images from '../technicalImages';
 const Technical = props => {
   return (
     <div className="technical">
-      <ImageGallery items={images} />
+      <ImageGallery items={images} autoPlay={true} slideInterval={5000} />
     </div>
   );
 };

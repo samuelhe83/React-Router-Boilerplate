@@ -14,7 +14,7 @@ const Homepage = props => {
         <p className="bannerText"> Eliminate Harmful Algal Bloom</p>
       </div>
       <div>
-        <ImageGallery items={images} />
+        <ImageGallery items={images} autoPlay={true} slideInterval={5000} />
       </div>
     </div>
   );
