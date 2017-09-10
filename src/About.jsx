@@ -10,7 +10,7 @@ const About = props => {
       </h1>
       <p id="contact">
         For any inquiries or questions about Cyanotrol products, <br /> please contact:{' '}
-        <a href="mailto:contact@cyanatrol.com">contact@cyanatrol.com</a>
+        <a href="mailto:contact@cyanotrol.com">contact@cyanotrol.com</a>
       </p>
     </div>
   );
